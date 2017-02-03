@@ -1,24 +1,36 @@
-# README
+# DESCRIPCION
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicación que contiene api del test, autentifica contra el modelo
 
-Things you may want to cover:
+# DEMO HEROKU
 
-* Ruby version
+[https://thawing-bayou-20305.herokuapp.com/](https://thawing-bayou-20305.herokuapp.com/)
 
-* System dependencies
+# Requistos
 
-* Configuration
+* Ruby 2.3.3
+* Rails 5.0.1
+* postgresql
 
-* Database creation
+# Instalación
 
-* Database initialization
+* Clonar repositorio local
+* Ejecutar comando 'bundle install'
+* Ejecutar comando 'rake db:migrate'
+* Setear variable de entorno 'SENGRID_KEY' con la KEY de Sendgrid para enviar correos
 
-* How to run the test suite
+# Ejecución
 
-* Services (job queues, cache servers, search engines, etc.)
+* Ejecutar comando 'rails s' para levantar el servidor en puerto 3000
+* Ejecutar aplicación de formulario en [http://localhost:3000](http://localhost:3030)
 
-* Deployment instructions
+# Datos de prueba exitosa
 
-* ...
+* email: iverdejo@acid.cl
+* imagen:
+![biometrica.png](https://thawing-bayou-20305.herokuapp.com/biometrica.png)
+
+
+# Repositorio formulario
+
+[https://github.com/Lucyan/acid-test-formulario](https://github.com/Lucyan/acid-test-formulario)
