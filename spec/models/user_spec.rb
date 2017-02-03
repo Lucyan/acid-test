@@ -6,7 +6,7 @@ RSpec.describe User, type: :model do
     image = "123123"
     User.create(email: email, image:image)
 
-    expect(User.count).to eq(1)
+    expect(User.where(email: email).count).to eq(1)
   end
 
   it "usuario con email valido" do
