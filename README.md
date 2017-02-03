@@ -22,7 +22,7 @@ Aplicación que contiene api del test, autentifica contra el modelo
 # Ejecución
 
 * Ejecutar comando 'rails s' para levantar el servidor en puerto 3000
-* Ejecutar aplicación de formulario en [http://localhost:3000](http://localhost:3030)
+* Ejecutar aplicación de formulario en [http://localhost:3030](http://localhost:3030)
 
 # Datos de prueba exitosa
 
