@@ -30,6 +30,9 @@ Aplicación que contiene api del test, autentifica contra el modelo
 * imagen:
 ![biometrica.png](https://thawing-bayou-20305.herokuapp.com/biometrica.png)
 
+# Ejecución pruebas automatizadas Modelo y Controlador
+
+* Ejecutar comando 'bundle exec rspec'
 
 # Repositorio formulario
 
