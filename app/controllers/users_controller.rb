@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
   protect_from_forgery unless: -> { request.format.json? }
 
   # Verifica email e imagen contra modelo
