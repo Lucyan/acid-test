@@ -19,6 +19,7 @@ class UserController < ApplicationController
                       :body => { 'image' => params[:image] }.to_json,
                       :headers => { 'Content-Type' => 'application/json', 'Accept' => 'application/json' })
       response = ['OK', :ok] if api_response.code == 200
+      EmailNotifierJob.perform_later(params[:email], response[0], params[:user_agent])
     end
     render :json => { :message => response[0] }, status: response[1]
   end
