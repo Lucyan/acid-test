@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
 
   scope 'rest' do
-    post 'verify_user/:email', to: 'users#verify', constraints: { email: /[^\/]+/, ip: /127.0.0.1/ } #Se restringe solo a llamadas del mismo servidor local
+    post 'verify_user/:email', to: 'users#verify', constraints: { email: /[^\/]+/ }
     post 'login', to: 'users#login'
   end
 
